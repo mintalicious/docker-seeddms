@@ -5,7 +5,7 @@ RUN apt-get update
 
 RUN apt-get install -q -y libpng-dev imagemagick
 
-RUN docker-php-ext-install gd
+RUN docker-php-ext-install gd pdo_mysql
 
 RUN apt-get install -q -y poppler-utils catdoc
 
